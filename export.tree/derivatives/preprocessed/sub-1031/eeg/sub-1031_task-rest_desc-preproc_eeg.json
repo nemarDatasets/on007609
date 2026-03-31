@@ -1,0 +1,12 @@
+{
+  "Description": "Preprocessed EEG data. Pipeline: (1) Channel locations loaded (ModGSN-HydroCel-257.sfp, Cz reference); (2) Bandpass filter 0.1-50 Hz (pop_eegfiltnew); (3) CleanLine at 60/120 Hz (bandwidth=2, tau=100, winsize=4, winstep=3); (4) Automatic channel rejection by kurtosis (threshold=2, normalized, applied twice); (5) Manual channel rejection via visual inspection; (6) Average re-reference; (7) ICA decomposition (runica, extended); (8) ICLabel classification and manual verification of flagged components (>0.8 probability); (9) ICA component removal; (10) Spherical interpolation of rejected channels from pre-rejection channel locations.",
+  "TaskName": "rest",
+  "EEGReference": "average",
+  "SamplingFrequency": 500,
+  "PowerLineFrequency": 60,
+  "SoftwareFilters": {
+    "HighpassFilter": {"CutoffFrequency": 0.1},
+    "LowpassFilter": {"CutoffFrequency": 50},
+    "CleanLine": {"LineFrequencies": [60, 120], "Bandwidth": 2, "WindowSize": 4, "WindowStep": 3, "Tau": 100}
+  }
+}

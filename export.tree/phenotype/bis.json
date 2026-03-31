@@ -1,0 +1,29 @@
+{
+  "MeasurementToolMetadata": {
+    "Description": "Behavioral Inhibition Scale from the Reinforcement Sensitivity Theory Personality Questionnaire (RST-PQ; Corr & Cooper, 2016)",
+    "TermURL": "https://doi.org/10.1037/pas0000273"
+  },
+  "participant_id": {
+    "Description": "Unique participant identifier"
+  },
+  "bis_total": {
+    "Description": "BIS total score (original scoring)",
+    "Units": "score"
+  },
+  "bis_heym": {
+    "Description": "BIS score using Heym et al. revised factor structure",
+    "Units": "score"
+  },
+  "fffs_heym": {
+    "Description": "Fight-Flight-Freeze System (FFFS) score using Heym et al. revised factor structure",
+    "Units": "score"
+  },
+  "bis_jackson": {
+    "Description": "BIS score using Jackson revised factor structure",
+    "Units": "score"
+  },
+  "fffs_jackson": {
+    "Description": "FFFS score using Jackson revised factor structure",
+    "Units": "score"
+  }
+}

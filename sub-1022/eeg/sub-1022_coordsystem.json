@@ -1,0 +1,5 @@
+{
+  "EEGCoordinateSystem": "Other",
+  "EEGCoordinateUnits": "cm",
+  "EEGCoordinateSystemDescription": "Electrode positions from EGI HydroCel Geodesic Sensor Net 256 template (ModGSN-HydroCel-257.sfp), loaded via EEGLAB chanedit. Cartesian X/Y/Z coordinates."
+}

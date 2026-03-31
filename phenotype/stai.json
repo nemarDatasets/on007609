@@ -1,0 +1,17 @@
+{
+  "MeasurementToolMetadata": {
+    "Description": "State-Trait Anxiety Inventory (STAI; Spielberger et al., 1983)",
+    "TermURL": "https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessment/tools/trait-state"
+  },
+  "participant_id": {
+    "Description": "Unique participant identifier"
+  },
+  "stai_state": {
+    "Description": "STAI State Anxiety subscale total score",
+    "Units": "score"
+  },
+  "stai_trait": {
+    "Description": "STAI Trait Anxiety subscale total score",
+    "Units": "score"
+  }
+}

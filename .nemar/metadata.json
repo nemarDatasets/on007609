@@ -1,0 +1,37 @@
+{
+  "version": "2.0",
+  "dataset_id": "on007609",
+  "source": "openneuro",
+  "source_id": "ds007609",
+  "title": "Resting-State EEG and Trait Anxiety",
+  "authors": {
+    "Tamari Shalamberidze": {},
+    "Kyle Nash": {},
+    "Jeremy B. Caplan": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds007609.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.9.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Social Sciences and Humanities Research Council of Canada (SSHRC)"
+    },
+    {
+      "funder_name": "Natural Sciences and Engineering Research Council of Canada (NSERC)"
+    }
+  ]
+}

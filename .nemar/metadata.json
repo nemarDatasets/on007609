@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Resting-State EEG and Trait Anxiety",
-  "description": "This dataset comprises resting-state EEG recordings from 51 right-handed undergraduate participants collected to investigate the relationship between resting-state EEG alpha/theta power, oscillatory dynamics, and trait anxiety. Participants completed a 4-minute alternating eyes-open and eyes-closed protocol while 256-channel EEG was recorded at 500 Hz. The dataset includes raw EEG data and phenotypic measures from standardized anxiety and personality questionnaires (STAI, TIPI, BIS/FFFS).",
-  "methods_description": "EEG was recorded using a 256-channel EGI HydroCel Geodesic Sensor Net with Net Amps amplifier at 500 Hz sampling rate with online reference at Cz. The resting-state protocol consisted of alternating 1-minute eyes-open and eyes-closed blocks repeated twice. Preprocessing included bandpass filtering (0.1-50 Hz), line noise removal at 60 and 120 Hz, kurtosis-based channel rejection, average re-referencing, ICA decomposition, and artifact component removal via ICLabel with visual inspection.",
+  "description": "This dataset comprises resting-state EEG recordings from 51 right-handed undergraduate participants collected at the University of Alberta, examining relationships between alpha/theta oscillatory dynamics and trait anxiety. Recordings include alternating eyes-open and eyes-closed resting blocks, accompanied by anxiety and personality questionnaire data. The dataset supports investigation into EEG correlates of trait anxiety and related psychological constructs.",
+  "methods_description": "EEG was recorded using a 256-channel EGI HydroCel Geodesic Sensor Net with a Net Amps amplifier at an original sampling rate of 500 Hz, referenced online to Cz. Participants completed a resting-state protocol of alternating 1-minute eyes-open and eyes-closed blocks (EO-EC-EO-EC) for 4 minutes total, with auditory cues signaling transitions. Preprocessing in EEGLAB included 0.1-50 Hz bandpass filtering, CleanLine noise removal at 60/120 Hz, kurtosis-based channel rejection, average re-referencing, ICA decomposition (runica), ICLabel-based artifact removal (>0.8 probability) with visual inspection, and spherical interpolation of removed channels.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -43,52 +43,26 @@
       "term": "EEG"
     },
     {
-      "term": "resting-state"
+      "term": "resting state"
     },
     {
       "term": "trait anxiety"
     },
     {
-      "term": "anxiety"
+      "term": "alpha rhythm"
     },
     {
-      "term": "alpha oscillations"
-    },
-    {
-      "term": "theta oscillations"
-    },
-    {
-      "term": "eyes-open"
-    },
-    {
-      "term": "eyes-closed"
+      "term": "theta rhythm"
     },
     {
       "term": "personality"
-    },
-    {
-      "term": "behavioral inhibition"
-    },
-    {
-      "term": "STAI"
-    },
-    {
-      "term": "TIPI"
-    },
-    {
-      "term": "BIS/FFFS"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1162/IMAG.a.44",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on007609",
@@ -108,12 +82,10 @@
   ],
   "funding_references": [
     {
-      "funder_name": "Social Sciences and Humanities Research Council of Canada",
-      "award_number": "SSHRC"
+      "funder_name": "Social Sciences and Humanities Research Council of Canada (SSHRC)"
     },
     {
-      "funder_name": "Natural Sciences and Engineering Research Council of Canada",
-      "award_number": "NSERC"
+      "funder_name": "Natural Sciences and Engineering Research Council of Canada (NSERC)"
     }
   ],
   "resource_type_general": "Dataset",

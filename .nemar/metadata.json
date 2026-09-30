@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Resting-State EEG and Trait Anxiety",
-  "description": "This dataset comprises resting-state EEG recordings from 51 right-handed undergraduate participants collected at the University of Alberta, examining relationships between alpha/theta oscillatory dynamics and trait anxiety. Recordings include alternating eyes-open and eyes-closed resting blocks, accompanied by anxiety and personality questionnaire data. The dataset supports investigation into EEG correlates of trait anxiety and related psychological constructs.",
-  "methods_description": "EEG was recorded using a 256-channel EGI HydroCel Geodesic Sensor Net with a Net Amps amplifier at an original sampling rate of 500 Hz, referenced online to Cz. Participants completed a resting-state protocol of alternating 1-minute eyes-open and eyes-closed blocks (EO-EC-EO-EC) for 4 minutes total, with auditory cues signaling transitions. Preprocessing in EEGLAB included 0.1-50 Hz bandpass filtering, CleanLine noise removal at 60/120 Hz, kurtosis-based channel rejection, average re-referencing, ICA decomposition (runica), ICLabel-based artifact removal (>0.8 probability) with visual inspection, and spherical interpolation of removed channels.",
+  "description": "Resting-state EEG recordings from 51 undergraduate participants at the University of Alberta, collected to examine how resting-state alpha and theta power and oscillatory dynamics relate to trait anxiety. Each participant completed alternating eyes-open and eyes-closed blocks, and the dataset includes preprocessed EEG along with questionnaire scores for anxiety and personality (STAI, TIPI, BIS/FFFS).",
+  "methods_description": "EEG was recorded with a 256-channel EGI HydroCel Geodesic Sensor Net at 500 Hz (online reference Cz). The protocol was four 1-minute blocks (EO-EC-EO-EC) signaled by auditory beeps. Preprocessing in EEGLAB included 0.1-50 Hz bandpass filtering, CleanLine line-noise removal, kurtosis-based channel rejection, average re-referencing, extended runica ICA with ICLabel and visual artifact component removal, and spherical interpolation.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -49,13 +49,16 @@
       "term": "trait anxiety"
     },
     {
-      "term": "alpha rhythm"
+      "term": "alpha oscillations"
     },
     {
-      "term": "theta rhythm"
+      "term": "theta oscillations"
     },
     {
-      "term": "personality"
+      "term": "Anxiety"
+    },
+    {
+      "term": "Electroencephalography"
     }
   ],
   "related_identifiers": [
@@ -94,7 +97,7 @@
     "eeg"
   ],
   "sizes": [
-    "15.1 GB (209 files)"
+    "14.04 GB (209 files)"
   ],
   "formats": [
     ".fdt",
